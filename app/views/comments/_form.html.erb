@@ -3,7 +3,6 @@
     <form class="comment-form" id="comment-form" data-remote="true" action="/comment/create/<%= @node.nid %><%= "?type=question" if local_assigns[:type]=="question" %>" <% if local_assigns[:aid].blank? %>method="post"<% end %>>
 
       <h4 style="margin-top:0;"><%= title %><% if current_user && current_user.id == @node.uid %> <small><a target="_blank" href="https://publiclab.org/comment-templates">Add a response template</a></small><% end %></h4>
-
       <style>
         #imagebar {
           width:100%;
@@ -147,3 +146,50 @@
     </form>
   </div>
 </div>
+
+<!--<div class="container">-->
+<!--<div class="row">-->
+<!--  <div style="font-size: 1.4em">-->
+<!--    <a class="badge badge-primary" href="/tag/air-quality">air-quality</a>-->
+<!--    <a class="badge badge-primary" href="/tag/water-quality">water-quality</a>-->
+<!--    <a class="badge badge-primary" href="/tag/soil">soil</a>-->
+<!--    <a class="badge badge-primary" href="/tag/oil-and-gas">oil-and-gas</a>-->
+<!--    <a class="badge badge-primary" href="/tag/climate">climate</a>-->
+<!--    <a class="badge badge-primary" href="/tag/sensors">sensors</a>-->
+<!--    <a class="badge badge-primary" href="/tag/organizing">organizing</a>-->
+
+<!--    <div style=" display: none" id="more-tags" >-->
+<!--      <a class="badge badge-primary" href="/tag/agriculture">agriculture</a>-->
+<!--      <a class="badge badge-primary" href="/tag/arduino">arduino</a>-->
+<!--      <a class="badge badge-primary" href="/tag/balloon-mapping">balloon-mapping</a>-->
+<!--      <a class="badge badge-primary" href="/tag/formaldehyde">formaldehyde</a>-->
+<!--      <a class="badge badge-primary" href="/tag/games">games</a>-->
+<!--      <a class="badge badge-primary" href="/tag/lead">lead</a>-->
+<!--      <a class="badge badge-primary" href="/tag/legal">legal</a>-->
+<!--      <a class="badge badge-primary" href="/tag/microplastics">microplastics</a>-->
+<!--      <a class="badge badge-primary" href="/tag/mining">mining</a>-->
+<!--      <a class="badge badge-primary" href="/tag/noise">noise</a>-->
+<!--      <a class="badge badge-primary" href="/tag/oil">oil</a>-->
+<!--      <a class="badge badge-primary" href="/tag/pm">particulate matter "pm"</a>-->
+<!--      <a class="badge badge-primary" href="/tag/stormwater">stormwater</a>-->
+<!--      <a class="badge badge-primary" href="/tag/timelapse">timelapse</a>-->
+<!--      <a class="badge badge-primary" href="/tag/ui">user interface "ui"</a>-->
+<!--      <a class="badge badge-primary"href="/tag/waste">waste</a>-->
+<!--    </div>-->
+<!--    <a style="font-size: medium; margin-top: 5px" href="#" onclick="$('#more-tags').toggle(); handleMore()" id="more" >more...</a>-->
+<!--  </div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<script>-->
+<!--    function handleMore() {-->
+<!--        var x=document.getElementById("more")-->
+<!--        if(x.innerHTML=== "more...")-->
+<!--        {-->
+<!--            x.innerHTML="less...";-->
+<!--        }-->
+<!--        else-->
+<!--        {-->
+<!--            x.innerHTML="more..."-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
